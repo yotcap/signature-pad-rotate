@@ -1,0 +1,69 @@
+.sigpad-rotate-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+}
+
+.sigpad-rotate-container .sigpad-rotate-canvas-boxer {
+  width: 80vw;
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translateY(-50%);
+  border: 1px dashed #999;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sigpad-rotate-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: rotate(90deg);
+  text-align: center;
+  z-index: 1001;
+}
+
+.sigpad-rotate-cover-default {
+  gap: 2rem;
+  left: -15%;
+}
+
+.sigpad-rotate-btn {
+  padding: 6px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sigpad-rotate-btn-primary {
+  color: #fff;
+  background-color: #409eff;
+}
+
+/* 竖屏 */
+@media screen and (orientation: portrait) {
+}
+
+/* 横屏 */
+@media screen and (orientation: landscape) {
+  .sigpad-rotate-container .sigpad-rotate-canvas-boxer {
+    width: 90vw;
+    height: 80vh;
+    left: 5%;
+    transform: translateY(-58%);
+  }
+
+  .sigpad-rotate-cover {
+    width: 60%;
+    top: 86%;
+    left: 20%;
+    transform: rotate(0);
+  }
+}

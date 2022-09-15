@@ -1,0 +1,47 @@
+{
+  "name": "signature-pad-rotate",
+  "version": "1.0.0",
+  "description": "支持移动端旋转的 SignaturePad",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production npx webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jxni",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yotcap/signature-pad-rotate.git"
+  },
+  "keywords": [
+    "signature-pad",
+    "rotate"
+  ],
+  "homepage": "https://github.com/yotcap/signature-pad-rotate#readme",
+  "dependencies": {
+    "signature_pad": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.20",
+    "@types/react-dom": "^18.0.6",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}

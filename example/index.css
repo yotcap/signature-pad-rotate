@@ -1,0 +1,17 @@
+.sigpad-rotate-container .sigpad-rotate-canvas-boxer {
+  width: 200px;
+  height: 200px;
+  /* top: 50%; */
+  left: 30%;
+  /* transform: translateY(-50%); */
+  background-color: red;
+}
+
+/* 横屏 */
+@media screen and (orientation: landscape) {
+  .sigpad-rotate-container .sigpad-rotate-canvas-boxer {
+    width: 200px;
+    height: 200px;
+    left: 38%;
+  }
+}
