@@ -1,4 +1,7 @@
 # signature-pad-rotate
+
+![](https://img.shields.io/npm/v/signature-pad-rotate)
+
 基于 [signature_pad](https://github.com/szimek/signature_pad) 适用于 React 的支持移动端旋转的签名组件，适配横竖屏，始终保持签名面板为横屏，并且生成的签名始终为横向。
 
 <img width="600" src="./doc/snipaste2.png" alt="截图" />
